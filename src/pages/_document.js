@@ -4,12 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body
-        style={{
-          backgroundImage: "url('/pattern.png')",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <body>
         <Main />
         <NextScript />
       </body>
