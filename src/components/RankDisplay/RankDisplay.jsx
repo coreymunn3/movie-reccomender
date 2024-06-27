@@ -8,15 +8,15 @@ const RankDisplay = (props) => {
       position={"absolute"}
       top={0}
       left={0}
-      backgroundColor={"blue.400"}
       width={35}
       height={35}
-      borderRadius={"50px"}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
+      pt={8}
+      pl={8}
     >
-      <Text color={"white"} fontWeight={"bold"} fontSize={"large"}>
+      <Text as="i" color={"gray.100"} fontWeight={"bold"} fontSize={"72px"}>
         {rank}
       </Text>
     </Box>
