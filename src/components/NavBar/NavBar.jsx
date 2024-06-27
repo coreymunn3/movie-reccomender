@@ -29,6 +29,7 @@ const NavBar = (props) => {
       boxShadow={"0 4px 30px rgba(0, 0, 0, 0.1)"}
       backdropFilter={"blur(8.8px)"}
       border={"1px solid rgba(255, 255, 255, 0.19)"}
+      zIndex={500}
     >
       <Link href={"/"}>
         <IconButton icon={<IoMdHome />} size={"lg"} borderRadius={"100px"} />
