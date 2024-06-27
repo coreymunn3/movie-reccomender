@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import { useRouter } from "next/router";
 import { Box, Flex, IconButton, Input } from "@chakra-ui/react";
 import { IoMdHome } from "react-icons/io";
@@ -31,9 +30,12 @@ const NavBar = (props) => {
       border={"1px solid rgba(255, 255, 255, 0.19)"}
       zIndex={500}
     >
-      <Link href={"/"}>
-        <IconButton icon={<IoMdHome />} size={"lg"} borderRadius={"100px"} />
-      </Link>
+      <IconButton
+        icon={<IoMdHome />}
+        size={"lg"}
+        borderRadius={"100px"}
+        onClick={() => router.push("/")}
+      />
       <form style={{ width: "100%" }} onSubmit={search}>
         <Input
           name="searchTerm"
