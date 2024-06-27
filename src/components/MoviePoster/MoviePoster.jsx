@@ -10,8 +10,9 @@ const MoviePoster = (props) => {
     props;
   return (
     <Link href={`/movie/${movie._id}`}>
-      <Box h="100%">
+      <Box h="100%" minWidth={"200px"}>
         <Box
+          transition={"all 300ms ease"}
           _hover={{
             boxShadow: "10px 10px 20px rgba(36, 36, 36, 0.5)",
           }}
