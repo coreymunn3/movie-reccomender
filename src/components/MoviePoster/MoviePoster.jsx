@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Box, Text } from "@chakra-ui/react";
 
 const MoviePoster = (props) => {
-  const { Title, Genre, Poster, Year, imdbID } = props;
+  const { Title, Genre, Poster, Year, imdbID, ...movieProps } = props;
   return (
     <Box h="100%" p={"0.5rem"}>
       <Image
