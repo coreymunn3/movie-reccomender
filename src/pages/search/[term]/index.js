@@ -6,7 +6,6 @@ import MovieGrid from "@/components/MovieGrid/MovieGrid";
 
 export default function Search(props) {
   const { movies } = props;
-  console.log(movies);
   const router = useRouter();
 
   return (
